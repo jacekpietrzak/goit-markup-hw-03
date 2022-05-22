@@ -231,6 +231,7 @@ a {
   border-radius: 4px;
   line-height: 1.625em;
   letter-spacing: 0.03em;
+  margin: 4px;
 }
 
 .portfolio-filter-button:hover,
