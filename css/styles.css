@@ -1,0 +1,10 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --link-color: ;
+  --link-color-hover: ;
+  --link-color-visited: ;
+}
