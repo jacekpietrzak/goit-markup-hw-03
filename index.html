@@ -3,51 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
     <title>Web Studio</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <!-- Logo -->
-      <a href="https://jacekpietrzak.github.io/goit-markup-hw-01/"><span>Web</span><span>Studio</span></a>
+      <a class="logo-header" href="index.html"><span>Web</span>Studio</a>
 
-      <nav>
+      <nav class="menu">
         <!-- Main navigation -->
         <ul>
-          <li><a href="">Agencja</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="">Kontakt</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Agencja</a></li>
+          <li class="menu-item"><a class="menu-link" href="portfolio.html">Portfolio</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Kontakt</a></li>
         </ul>
       </nav>
       <!-- Contact -->
-      <div>
+      <div class="menu-contact">
         <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+          <li class="menu-item"><a class="menu-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="menu-item"><a class="menu-link" href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
       </div>
     </header>
-    <main>
-      <section>
-        <h1>Efektywne rozwiązania dla waszego biznesu</h1>
-        <button type="button">Zamów usługę</button>
+
+    <main class="main">
+      <section class="hero">
+        <section class="hero-container">
+          <h1 class="hero-heading">Efektywne rozwiązania dla waszego biznesu</h1>
+          <button class="hero-button" type="button">Zamów usługę</button>
+        </section>
+      </section>
+
+      <section class="testimonials">
         <ul>
-          <li>
-            <h3>Lorem ipsum</h3>
-            <p>
+          <li class="testimonials-list-item">
+            <h3 class="testimonials-item-heading">Lorem ipsum</h3>
+            <p class="testimonials-item-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum atque consequuntur eaque mollitia quasi
               velit.
             </p>
           </li>
-          <li>
-            <h3>Lorem ipsum</h3>
-            <p>
+          <li class="testimonials-list-item">
+            <h3 class="testimonials-item-heading">Lorem ipsum</h3>
+            <p class="testimonials-item-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum atque consequuntur eaque mollitia quasi
               velit.
             </p>
           </li>
-          <li>
-            <h3>Lorem ipsum</h3>
-            <p>
+          <li class="testimonials-list-item">
+            <h3 class="testimonials-item-heading">Lorem ipsum</h3>
+            <p class="testimonials-item-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum atque consequuntur eaque mollitia quasi
+              velit.
+            </p>
+          </li>
+          <li class="testimonials-list-item">
+            <h3 class="testimonials-item-heading">Lorem ipsum</h3>
+            <p class="testimonials-item-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum atque consequuntur eaque mollitia quasi
               velit.
             </p>
@@ -55,77 +78,73 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Czym się zajmujemy</h2>
+      <section class="services">
+        <h2 class="services-heading">Czym się zajmujemy</h2>
         <ul>
-          <li>
+          <li class="services-list-item">
             <img
+              class="services-list-item-image"
               src="images/close-up-image-programer-working-his-desk-office_1098-18707.jpg"
               alt="Close up image programer"
-              width="370"
-              height="294"
             />
           </li>
-          <li>
+          <li class="services-list-item">
             <img
+              class="services-list-item-image"
               src="images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg"
               alt="Designer is developing smartphone application"
-              width="370"
-              height="294"
             />
           </li>
-          <li>
+          <li class="services-list-item">
             <img
+              class="services-list-item-image"
               src="images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg"
               alt="Creative artist with web design with working colour selection graphic tablet"
-              width="370"
-              height="294"
             />
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2>Nasz zespół</h2>
+      <section class="team-container">
+        <h2 class="team-heading">Nasz zespół</h2>
         <ul>
-          <li>
-            <img src="images/john-doe-product-designer.jpg" alt="John Doe product designer" width="270" height="260" />
-            <h3>John Doe</h3>
-            <p>Product Designer</p>
+          <li class="team-list-item">
+            <img class="team-list-image" src="images/john-doe-product-designer.jpg" alt="John Doe product designer" />
+            <h3 class="team-list-item-heading">John Doe</h3>
+            <p class="team-list-item-text">Product Designer</p>
           </li>
-          <li>
+          <li class="team-list-item">
             <img
+              class="team-list-image"
               src="images/john-doe-frontend-developer.jpg"
               alt="John Doe frontend developer"
-              width="270"
-              height="260"
             />
-            <h3>John Doe</h3>
-            <p>Frontend Developer</p>
+            <h3 class="team-list-item-heading">John Doe</h3>
+            <p class="team-list-item-text">Frontend Developer</p>
           </li>
-          <li>
-            <img src="images/john-doe-marketing.jpg" alt="John Doe marketing" width="270" height="260" />
-            <h3>John Doe</h3>
-            <p>Marketing</p>
+          <li class="team-list-item">
+            <img class="team-list-image" src="images/john-doe-marketing.jpg" alt="John Doe marketing" />
+            <h3 class="team-list-item-heading">John Doe</h3>
+            <p class="team-list-item-text">Marketing</p>
           </li>
-          <li>
-            <img src="images/john-doe-ui-designer.jpg" alt="John Doe Ui designer" width="270" height="260" />
-            <h3>John Doe</h3>
-            <p>Ui Designer</p>
+          <li class="team-list-item">
+            <img class="team-list-image" src="images/john-doe-ui-designer.jpg" alt="John Doe Ui designer" />
+            <h3 class="team-list-item-heading">John Doe</h3>
+            <p class="team-list-item-text">Ui Designer</p>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <!-- Logo -->
-      <a href="https://jacekpietrzak.github.io/goit-markup-hw-01/"><span>Web</span><span>Studio</span></a>
+      <a class="logo-footer" href="index.html"><span>Web</span>Studio</a>
       <!-- Contact -->
       <address>
         <ul>
-          <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+          <li class="footer-text">m. Warszawa, Aleje Jerozolimskie 21</li>
+          <li class="footer-text"><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
+          <li class="footer-text"><a class="footer-link" href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
       </address>
     </footer>

@@ -3,11 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
     <title>Web Studio</title>
   </head>
+
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="header">
+      <!-- Logo -->
+      <a class="logo-header" href="index.html"><span>Web</span>Studio</a>
+
+      <nav class="menu">
+        <!-- Main navigation -->
+        <ul>
+          <li class="menu-item"><a class="menu-link" href="">Agencja</a></li>
+          <li class="menu-item"><a class="menu-link" href="portfolio.html">Portfolio</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Kontakt</a></li>
+        </ul>
+      </nav>
+      <!-- Contact -->
+      <div class="menu-contact">
+        <ul>
+          <li class="menu-item"><a class="menu-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="menu-item"><a class="menu-link" href="tel:+48111111111">+48 111 111 111</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- portfolio -->
+      <section class="portfolio">
+        <!-- portfolio filter buttons -->
+        <section class="portfolio-filter">
+          <ul>
+            <li class="portfolio-filter-item"><button class="portfolio-filter-button">Wszystkie</button></li>
+            <li class="portfolio-filter-item"><button class="portfolio-filter-button">Strony</button></li>
+            <li class="portfolio-filter-item"><button class="portfolio-filter-button">Aplikacje</button></li>
+            <li class="portfolio-filter-item"><button class="portfolio-filter-button">Dizajn</button></li>
+            <li class="portfolio-filter-item"><button class="portfolio-filter-button">Marketing</button></li>
+          </ul>
+        </section>
+        <!-- portoflio content -->
+        <section class="portfolio-container">
+          <ul>
+            <li class="portfolio-container-item">
+              <img
+                class="portfolio-container-image"
+                src="images/portfolio1.jpg"
+                alt="Laptop ze stroną internetową na ekranie."
+              />
+              <h3 class="portfolio-container-heading">Technocrack</h3>
+              <p class="portfolio-container-text">Strona internetowa</p>
+            </li>
+            <li class="portfolio-container-item">
+              <img
+                class="portfolio-container-image"
+                src="images/portfolio2.jpg"
+                alt="Grafika dwóch skaczących zawodników NBA"
+              />
+              <h3 class="portfolio-container-heading">Grafika New Orlean vs Golden Star</h3>
+              <p class="portfolio-container-text">Dizajn</p>
+            </li>
+            <li class="portfolio-container-item">
+              <img
+                class="portfolio-container-image"
+                src="images/portfolio3.jpg"
+                alt="Aplikacja dla restauracji podającej owoce morza"
+              />
+              <h3 class="portfolio-container-heading">Restauracja Seafood</h3>
+              <p class="portfolio-container-text">Aplikacja</p>
+            </li>
+            <li class="portfolio-container-item">
+              <img class="portfolio-container-image" src="images/portfolio4.jpg" alt="Słuchawki nauszne od frontu" />
+              <h3 class="portfolio-container-heading">Projekt Prime</h3>
+              <p class="portfolio-container-text">Marketing</p>
+            </li>
+            <li class="portfolio-container-item">
+              <img
+                class="portfolio-container-image"
+                src="images/portfolio5.jpg"
+                alt="Grafika przedstawiająca dwa pudełka"
+              />
+              <h3 class="portfolio-container-heading">Projekt Boxes</h3>
+              <p class="portfolio-container-text">Aplikacja</p>
+            </li>
+            <li class="portfolio-container-item">
+              <img
+                class="portfolio-container-image"
+                src="images/portfolio6.jpg"
+                alt="Strona internetowa pokazywana na komputerze iMac"
+              />
+              <h3 class="portfolio-container-heading">Inspiration has no Borders</h3>
+              <p class="portfolio-container-text">Strona internetowa</p>
+            </li>
+            <li class="portfolio-container-item">
+              <img
+                class="portfolio-container-image"
+                src="images/portfolio7.jpg"
+                alt="Otwarty papierowy magazyn na szarym tle widziany z góry"
+              />
+              <h3 class="portfolio-container-heading">Magazyn Limited Edition</h3>
+              <p class="portfolio-container-text">Dizajn</p>
+            </li>
+            <li class="portfolio-container-item">
+              <img
+                class="portfolio-container-image"
+                src="images/portfolio8.jpg"
+                alt="Projekt zawieszki z widocznym napisem Label Tag"
+              />
+              <h3 class="portfolio-container-heading">Projekt LAB</h3>
+              <p class="portfolio-container-text">Marketing</p>
+            </li>
+            <li class="portfolio-container-item">
+              <img
+                class="portfolio-container-image"
+                src="images/portfolio9.jpg"
+                alt="Otwarty komputer Macbook z widoczna stroną internetową"
+              />
+              <h3 class="portfolio-container-heading">Growing Business</h3>
+              <p class="portfolio-container-text">Aplikacja</p>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!-- Logo -->
+      <a class="logo-footer" href="index.html"><span>Web</span>Studio</a>
+      <!-- Contact -->
+      <address>
+        <ul>
+          <li class="footer-text">m. Warszawa, Aleje Jerozolimskie 21</li>
+          <li class="footer-text"><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
+          <li class="footer-text"><a class="footer-link" href="tel:+48111111111">+48 111 111 111</a></li>
+        </ul>
+      </address>
+    </footer>
   </body>
 </html>
