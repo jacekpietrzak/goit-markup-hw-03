@@ -3,6 +3,12 @@
   padding: 0px;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --link-color: ;
   --link-color-hover: #2196f3;
@@ -12,16 +18,18 @@
   --hero-button-color: #2196f3;
 }
 
-body {
-  /* Box-model */
+/* Style declaration order:
+1. Positioning
+2. Box model
+3. Typography
+4. Visual
+5. Misc
+*/
 
-  /* Typography */
+body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   font-style: normal;
   color: #212121;
-  /* Visual */
-  background-color: #e5e5e5;
-  /* Misc */
 }
 
 .main {
@@ -36,7 +44,8 @@ a {
 .header {
   border-bottom: 1px solid #ececec;
   background-color: #fff;
-  padding: 25px 215px;
+  padding: 25px 0;
+  margin: 0 auto;
 }
 
 .logo-header {
@@ -48,7 +57,6 @@ a {
   line-height: 1.19em;
   letter-spacing: 0.03em;
   text-transform: capitalize;
-  margin-right: 93px;
 }
 
 .logo-header {
@@ -64,7 +72,6 @@ a {
 
 .menu-item {
   display: inline-block;
-  margin-right: 46px;
 }
 .menu-contact {
   display: inline-block;
@@ -170,6 +177,7 @@ a {
 .services-list-item-image {
   width: 370px;
   height: 294px;
+  display: block;
 }
 
 /* Team */
@@ -193,7 +201,8 @@ a {
   display: inline-block;
   background-color: #fff;
   text-align: center;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin: 15px;
 }
@@ -201,6 +210,7 @@ a {
 .team-list-image {
   width: 270px;
   height: 260px;
+  display: block;
 }
 
 .team-list-item-heading {
@@ -239,7 +249,8 @@ a {
 .portfolio-filter-button:focus {
   background-color: var(--link-color-hover);
   color: #fff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-container-item {
@@ -252,6 +263,7 @@ a {
 .portfolio-container-image {
   width: 370px;
   height: 294px;
+  display: block;
 }
 
 .portfolio-container-heading {
@@ -273,7 +285,7 @@ a {
   font-style: normal;
   background-color: #2f303a;
   color: #fff;
-  padding: 60px 215px 60px 215px;
+  padding: 60px 0;
 }
 
 .logo-footer {
@@ -305,6 +317,10 @@ a {
   list-style-type: none;
   color: #fff;
   margin-bottom: 9px;
+}
+
+.footer-text:last-child {
+  margin-bottom: 0;
 }
 
 .footer-link {
