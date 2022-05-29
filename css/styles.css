@@ -42,10 +42,11 @@ main {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
-  padding: 94px 15px;
+  padding: 94px 0;
 }
 
 /* Header */
@@ -53,7 +54,6 @@ main {
 .header {
   border-bottom: 1px solid #ececec;
   background-color: #fff;
-
   padding: 25px 15px;
 }
 
@@ -66,11 +66,10 @@ main {
 
 .header-menu-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
-  margin-left: -23px;
+  margin-left: -46px;
 }
 
 .header-menu-list-logo {
@@ -90,7 +89,7 @@ main {
 }
 
 .header-menu-list-item {
-  margin-left: 23px;
+  margin-left: 46px;
 }
 
 .header-menu-list-link {
@@ -102,6 +101,30 @@ main {
   color: #212121;
 }
 
+.header-menu-list-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin-left: -50px;
+}
+
+.header-menu-list-contact-item {
+  margin-left: 50px;
+}
+
+.header-menu-list-contact-link {
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  text-transform: capitalize;
+  color: #757575;
+}
+
+.header-menu-list-contact-link:hover,
+.header-menu-list-contact-link:active,
+.header-menu-list-contact-link:focus,
 .header-menu-list-link:hover,
 .header-menu-list-link:active,
 .header-menu-list-link:focus {
@@ -151,22 +174,19 @@ main {
 
 /* Testimonials */
 
-.testimonials {
-  padding-bottom: 94px;
-}
-
 .testimonials-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: -30px;
+  margin-bottom: -30px;
+  padding-bottom: 94px;
 }
 
 .testimonials-list-item {
   list-style-type: none;
   margin-left: 30px;
-  margin-top: 30px;
+  margin-bottom: 30px;
   max-width: 270px;
 }
 
@@ -199,13 +219,13 @@ main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: -30px;
+  margin-bottom: -30px;
   margin-left: -30px;
 }
 
 .services-list-item {
   list-style-type: none;
-  margin-top: 30px;
+  margin-bottom: 30px;
   margin-left: 30px;
 }
 
@@ -218,8 +238,6 @@ main {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 79px;
 }
 
 .team-heading {
