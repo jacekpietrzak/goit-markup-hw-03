@@ -69,10 +69,16 @@ main {
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
-  margin-left: -46px;
 }
 
-.header-menu-list-logo {
+.header-menu-list-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin-left: -46px;
+}
+.header-menu-logo {
   font-family: 'raleway';
   font-style: normal;
   font-weight: 700;
@@ -81,18 +87,18 @@ main {
   letter-spacing: 0.03em;
   text-transform: capitalize;
   color: #212121;
-  margin-right: 70px;
+  margin-right: 93px;
 }
 
-.header-menu-list-logo > span {
+.header-menu-logo > span {
   color: var(--logo-color-accent);
 }
 
-.header-menu-list-item {
+.header-menu-list-nav-item {
   margin-left: 46px;
 }
 
-.header-menu-list-link {
+.header-menu-list-nav-link {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14em;
