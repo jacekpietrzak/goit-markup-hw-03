@@ -54,7 +54,7 @@ main {
 .header {
   border-bottom: 1px solid #ececec;
   background-color: #fff;
-  padding: 25px 15px;
+  padding: 25px 0;
 }
 
 .header-menu {
