@@ -30,15 +30,13 @@ body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   font-style: normal;
   color: #212121;
+  background-color: #fff;
 }
 
 a {
   text-decoration: none;
 }
 
-main {
-  background-color: #fff;
-}
 .container {
   max-width: 1200px;
   margin: 0 auto;
