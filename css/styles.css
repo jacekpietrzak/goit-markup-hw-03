@@ -133,9 +133,9 @@ main {
 .header-menu-list-contact-link:hover,
 .header-menu-list-contact-link:active,
 .header-menu-list-contact-link:focus,
-.header-menu-list-link:hover,
-.header-menu-list-link:active,
-.header-menu-list-link:focus {
+.header-menu-list-nav-link:hover,
+.header-menu-list-nav-link:active,
+.header-menu-list-nav-link:focus {
   color: var(--link-color-hover);
 }
 
