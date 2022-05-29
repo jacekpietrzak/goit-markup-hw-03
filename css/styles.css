@@ -94,6 +94,7 @@ main {
 
 .header-menu-list-link {
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.14em;
   letter-spacing: 0.02em;
   font-style: normal;
@@ -115,6 +116,7 @@ main {
 
 .header-menu-list-contact-link {
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.14em;
   letter-spacing: 0.02em;
   font-style: normal;
@@ -191,10 +193,12 @@ main {
 }
 
 .testimonials-item-heading {
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.14em;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .testimonials-item-text {
